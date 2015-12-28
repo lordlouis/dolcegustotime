@@ -1,2 +1,2 @@
-# dolcegustotimer
-Pebble Watchapp for Dolce Gusto Timer
+# dolcegustotime
+Pebble Watchapp for Dolce Gusto Time
