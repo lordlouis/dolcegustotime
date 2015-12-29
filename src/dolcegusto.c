@@ -154,7 +154,7 @@ static void main_window_load(Window *window) {
   update_level(0);
   
   status_bar = status_bar_layer_create();
-  int16_t width = window_bounds.size.w - ACTION_BAR_WIDTH;
+  int16_t width = window_bounds.size.w - PBL_IF_ROUND_ELSE(0, ACTION_BAR_WIDTH);
   GRect frame = GRect(0, 0, width, STATUS_BAR_LAYER_HEIGHT);
   status_bar_layer_set_colors(status_bar, GColorClear, GColorWhite);
   layer_set_frame(status_bar_layer_get_layer(status_bar), frame);
@@ -167,6 +167,9 @@ static void main_window_load(Window *window) {
   s_icon_pause_bitmap = gbitmap_create_with_resource(RESOURCE_ID_ICON_PAUSE);
   // Initialize the action bar:
   action_bar = action_bar_layer_create();
+  #ifdef PBL_PLATFORM_APLITE
+    action_bar_layer_set_background_color(action_bar, GColorWhite);
+  #endif
   // Associate the action bar with the window:
   action_bar_layer_add_to_window(action_bar, window);
   // Set the click config provider:
@@ -181,7 +184,7 @@ static void main_window_load(Window *window) {
 
 
   // Create the canvas Layer
-  s_canvas_layer = layer_create(GRect(0, 10, width, window_bounds.size.h));
+  s_canvas_layer = layer_create(GRect(PBL_IF_ROUND_ELSE(32, 0), PBL_IF_ROUND_ELSE(20, 10) , width, window_bounds.size.h));
 
   // Set the LayerUpdateProc
   layer_set_update_proc(s_canvas_layer, update_proc);
@@ -228,7 +231,7 @@ static void init() {
   s_levels_image[5] = gdraw_command_image_create_with_resource(RESOURCE_ID_LEVEL_6_IMAGE);
   s_levels_image[6] = gdraw_command_image_create_with_resource(RESOURCE_ID_LEVEL_7_IMAGE);
   
-  window_set_background_color(s_main_window, GColorBlue);
+  window_set_background_color(s_main_window, GColorBlueMoon);
   window_stack_push(s_main_window, true);
 }
 

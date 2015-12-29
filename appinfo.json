@@ -1,85 +1,85 @@
 {
-    "appKeys": {},
-    "capabilities": [
-        ""
-    ],
-    "companyName": "lordlouis",
-    "longName": "Dolce Gusto Timer",
-    "projectType": "native",
-    "resources": {
-        "media": [
-            {
-                "file": "data/level_bg.pdc",
-                "name": "LEVEL_BG_IMAGE",
-                "type": "raw"
-            },
-            {
-                "file": "data/level_7.pdc",
-                "name": "LEVEL_7_IMAGE",
-                "type": "raw"
-            },
-            {
-                "file": "data/level_6.pdc",
-                "name": "LEVEL_6_IMAGE",
-                "type": "raw"
-            },
-            {
-                "file": "data/level_5.pdc",
-                "name": "LEVEL_5_IMAGE",
-                "type": "raw"
-            },
-            {
-                "file": "data/level_4.pdc",
-                "name": "LEVEL_4_IMAGE",
-                "type": "raw"
-            },
-            {
-                "file": "data/level_3.pdc",
-                "name": "LEVEL_3_IMAGE",
-                "type": "raw"
-            },
-            {
-                "file": "data/level_2.pdc",
-                "name": "LEVEL_2_IMAGE",
-                "type": "raw"
-            },
-            {
-                "file": "data/level_1.pdc",
-                "name": "LEVEL_1_IMAGE",
-                "type": "raw"
-            },
-            {
-                "file": "images/music_icon_play.png",
-                "name": "ICON_PLAY",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/music_icon_pause.png",
-                "name": "ICON_PAUSE",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/action_bar_icon_up.png",
-                "name": "ICON_UP",
-                "type": "bitmap"
-            },
-            {
-                "file": "images/action_bar_icon_down.png",
-                "name": "ICON_DOWN",
-                "type": "bitmap"
-            }
-        ]
-    },
-    "sdkVersion": "3",
-    "shortName": "Dolce Gusto Timer",
-    "targetPlatforms": [
-        "aplite",
-        "basalt",
-        "chalk"
-    ],
-    "uuid": "ecdfe63e-525e-4c32-a40c-07f0a3abff1d",
-    "versionLabel": "1.0",
-    "watchapp": {
-        "watchface": false
-    }
+  "uuid": "ecdfe63e-525e-4c32-a40c-07f0a3abff1d",
+  "shortName": "Dolce Gusto Time",
+  "longName": "Dolce Gusto Time",
+  "companyName": "lordlouis",
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["aplite", "basalt", "chalk"],
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": [
+      {
+        "menuIcon": true,
+        "type": "bitmap",
+        "name": "IMAGE_MENU_ICON",
+        "file": "images/menu_icon.png"
+      },
+      {
+        "type": "bitmap",
+        "name": "ICON_UP",
+        "file": "icons/action_bar_icon_up.png"
+      },
+      {
+        "type": "bitmap",
+        "name": "ICON_DOWN",
+        "file": "icons/action_bar_icon_down.png"
+      },
+      {
+        "type": "bitmap",
+        "name": "ICON_PLAY",
+        "file": "icons/music_icon_play.png"
+      },
+      {
+        "type": "bitmap",
+        "name": "ICON_PAUSE",
+        "file": "icons/music_icon_pause.png"
+      },
+	  {
+		"type": "raw",
+		"name": "LEVEL_BG_IMAGE",
+		"file": "images/level_bg.pdc"
+	  },
+	  {
+		"type": "raw",
+		"name": "LEVEL_1_IMAGE",
+		"file": "images/level_1.pdc"
+	  },
+	  {
+		"type": "raw",
+		"name": "LEVEL_2_IMAGE",
+		"file": "images/level_2.pdc"
+	  },
+	  {
+		"type": "raw",
+		"name": "LEVEL_3_IMAGE",
+		"file": "images/level_3.pdc"
+	  },
+	  {
+		"type": "raw",
+		"name": "LEVEL_4_IMAGE",
+		"file": "images/level_4.pdc"
+	  },
+	  {
+		"type": "raw",
+		"name": "LEVEL_5_IMAGE",
+		"file": "images/level_5.pdc"
+	  },
+	  {
+		"type": "raw",
+		"name": "LEVEL_6_IMAGE",
+		"file": "images/level_6.pdc"
+	  },
+	  {
+		"type": "raw",
+		"name": "LEVEL_7_IMAGE",
+		"file": "images/level_7.pdc"
+	  }
+	]
+  }
 }
